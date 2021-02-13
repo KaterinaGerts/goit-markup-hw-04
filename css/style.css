@@ -206,16 +206,16 @@ body {
   background-color: var(--secondary-bg-color);
 }
 .icon-antenna::before { 
-  background-image: url("../img/antenna.png");
+  background-image: url("../img/antenna\ 1.svg");
 }
 .icon-clock::before {  
-  background-image: url("../img/clock.png");
+  background-image: url("../img/clock\ 1.svg");
 }
 .icon-diagram::before {  
-  background-image: url("../img/diagram.png");
+  background-image: url("../img/diagram\ 1.svg");
 }
 .icon-astronaut::before {  
-  background-image: url("../img/astronaut.png");
+  background-image: url("../img/astronaut\ 1.svg");
 }
 .subtitle {
   margin: 0px;
@@ -351,6 +351,24 @@ body {
   padding-top: 60px;
   padding-bottom: 60px; 
 }
+ .icons {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  /* margin-left: 156px; */
+} 
+.social-icons {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
 /* /Контакты */
 
 /*Portfolio*/
