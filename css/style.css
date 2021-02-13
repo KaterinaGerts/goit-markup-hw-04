@@ -193,7 +193,30 @@ body {
 .list-description {    
   width: 270px;  
 }
-
+.list-description::before {
+  content: "" ;
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-position: center;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  padding: 25px 100px;
+  background-color: var(--secondary-bg-color);
+}
+.icon-antenna::before { 
+  background-image: url("../img/antenna.png");
+}
+.icon-clock::before {  
+  background-image: url("../img/clock.png");
+}
+.icon-diagram::before {  
+  background-image: url("../img/diagram.png");
+}
+.icon-astronaut::before {  
+  background-image: url("../img/astronaut.png");
+}
 .subtitle {
   margin: 0px;
   margin-bottom: 10px;
