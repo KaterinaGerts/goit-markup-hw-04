@@ -91,14 +91,26 @@ body {
 }
 
 .list .current {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .address {
   display: flex;
   margin-left: auto;
 }
-
+.nav-contact {
+  display: flex;
+  align-items: center;
+  
+}
+.icon-contacts {
+  padding-right: 2px;
+  fill: var(--primary-text-color);
+}
+.icon-contacts:hover,
+.icon-contacts:focus {
+  color: var(--accent-color);
+}
 .address .adress-color {
   display: block;
   margin-right: 50px;  
