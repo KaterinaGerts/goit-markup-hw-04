@@ -341,6 +341,39 @@ body {
 }
 /* /Наша команда */
 
+/*Постоянные клиенты*/
+.clients-container {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.clients-logo {
+  padding: 19px 65px;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--social-links-color) ;
+  border-radius: 4px;
+}
+.clients-logo:hover,
+.clients-logo:focus {
+ border: 1px solid var(--accent-color); 
+}
+.icon-logo {
+  fill: var(--social-links-color);
+}
+.icon-logo:hover,
+.icon-logo:focus {
+  fill: var(--accent-color);  
+}
+/*/Постоянные клиенты*/
+
 /* Контакты */
 .contacts { 
   height: 252px; 
