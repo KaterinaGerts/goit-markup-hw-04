@@ -11,6 +11,7 @@
   --border-line-color: #ECECEC;
   --gradient: rgba(47, 48, 58, 0.4);
   --social-links-color: #AFB1B8;
+  --accent-bg-links-color: rgba(255, 255, 255, 0.1);
 }
  
 body {
@@ -376,8 +377,15 @@ padding-bottom: 94px;
 
 /* Контакты */
 .contacts { 
-  height: 252px; 
   background-color: var(--primary-bg-color);
+}
+.padding-contacts {   
+  padding-top: 60px;
+  padding-bottom: 60px;  
+}
+
+.contacts-container {
+  display: block;  
 }
 
 .adress .location {
@@ -407,31 +415,23 @@ padding-bottom: 94px;
   margin-bottom: 0px;
 }
 
-.web-margin {
-  margin-bottom: 20px;
-}
+/* .web-margin {
+  margin-bottom: 20px; 
+} */
 
-.padding-contacts {   
-  padding-top: 60px;
-  padding-bottom: 60px;  
-}
-.contacts-container {
+  .box-container { 
   display: flex;
-  align-items: center;
-}
-.logo {
-  display: flex;
-  margin-right: 156px;
-}
-
- .icons {
-  display: flex;
-  align-items:flex-end ;
-  margin: 0px;   
+  align-items: baseline;  
+  
 } 
-
+.logo {
+  margin-right: 156px;
+  margin-bottom: 20px; 
+  
+} 
 .subtitle-text {
-  margin-bottom: 20px;
+  margin: 0px;
+  margin-bottom: 20px; 
 
   font-weight: bold;
   font-size: 14px;
@@ -440,14 +440,19 @@ padding-bottom: 94px;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
-.social-links {
-  display: flex;
-  justify-content: space-between;
+.address-bar {
+  margin: 0px;
+  padding: 0px;
 }
-.icon-size {
-  width: 44px;
-  height: 44px;
-  list-style: none;
+.icon-fill {
+  fill: var(--secondary-text-color);
+}
+.icon-color { 
+  margin-right: 10px; 
+  background-color: var(--accent-bg-links-color);
+}
+.icon-color:last-child {
+  margin-right: 0px;  
 }
 /* /Контакты */
 
@@ -463,9 +468,7 @@ padding-bottom: 94px;
   display: flex;
   justify-content: center;
   margin: 0px;
-  padding: 0px;
-    
-  
+  padding: 0px;  
 }
 
 .links-button {
