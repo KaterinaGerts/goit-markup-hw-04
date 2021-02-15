@@ -96,27 +96,17 @@ body {
   fill: var(--accent-color);
 }
 
-.address {
-  display: flex;
-  margin-left: auto;
+.address {  
+  margin-left: auto; 
 }
 .nav-contact {
-  display: flex;   
+   display: flex;    
 }
 
-.icon-contacts {      
-  padding-right: 2px;
-  fill: var(--primary-text-color);
-}
-
-.icon-contacts:hover,
-.icon-contacts:focus {
-  fill: var(--accent-color);
-}
 .address .adress-color {
   display: flex;
   align-items: center;
-  margin-right: 50px;  
+  margin-right: 30px;  
   
   font-style: normal;
   font-size: 14px;
@@ -124,15 +114,20 @@ body {
   text-decoration: none;
   color: var(--primary-text-color);
 }
+.icon-contacts { 
+  margin-right: 10px;   
+  fill: currentColor;
+}
 
 .address .adress-color:last-child {
   margin-right: 0px;
 }
 
 .address .adress-color:hover,
-.address .adress-color:focus {
+.address .adress-color:focus {  
   color: var(--accent-color);
-}
+  fill: var(--accent-color);  
+} 
 
 /* /Шапка сайта */
 
@@ -326,20 +321,29 @@ body {
   margin-right: 0px;
 }
 
-.icons-bar:hover,
-.icons-bar:focus {
-  background-color: var(--accent-color);
-}  
-
+.icon-links {
+  color: var(--social-links-color);
+}
 .social-icons {
   display: inline-flex; 
   align-items: center;   
-  fill: var(--social-links-color);
+  fill: currentColor;
 }
-.social-icons:hover,
+.icons-bar:hover,
+.icons-bar:focus {
+  background-color: var(--accent-color);
+  } 
+
+.icon-links:hover,
+.icon-links:focus {  
+  color: var(--secondary-text-color);
+  /* fill:var(--secondary-text-color) ; */
+}  
+/* .social-icons:hover,
 .social-icons:focus {
   fill: var(--secondary-text-color);
-}
+}   */
+  
 /* /Наша команда */
 
 /*Постоянные клиенты*/
@@ -362,17 +366,19 @@ padding-bottom: 94px;
   border: 1px solid var(--social-links-color) ;
   border-radius: 4px;
 }
+.icon-logo {  
+  align-items: center;
+  fill: currentColor;
+}
 .clients-logo:hover,
-.clients-logo:focus {
+.clients-logo:focus {  
  border: 1px solid var(--accent-color); 
-}
-.icon-logo {
-  fill: var(--social-links-color);
-}
-.icon-logo:hover,
-.icon-logo:focus {
+ }
+
+ .icon-logo:hover,
+.icon-logo:focus {  
   fill: var(--accent-color);  
-}
+} 
 /*/Постоянные клиенты*/
 
 /* Контакты */
@@ -414,10 +420,6 @@ padding-bottom: 94px;
 .adress .address-color:last-child {
   margin-bottom: 0px;
 }
-
-/* .web-margin {
-  margin-bottom: 20px; 
-} */
 
   .box-container { 
   display: flex;
