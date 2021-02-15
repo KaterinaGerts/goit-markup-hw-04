@@ -99,20 +99,21 @@ body {
   margin-left: auto;
 }
 .nav-contact {
-  display: flex;
-  align-items: center;
-  
+  display: flex;   
 }
-.icon-contacts {
+
+.icon-contacts {      
   padding-right: 2px;
   fill: var(--primary-text-color);
 }
+
 .icon-contacts:hover,
 .icon-contacts:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .address .adress-color {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-right: 50px;  
   
   font-style: normal;
