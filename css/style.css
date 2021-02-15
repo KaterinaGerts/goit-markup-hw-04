@@ -124,16 +124,13 @@ body {
 /* Верхняя секция сайта */
 .hero-container {
   padding-top: 200px;
-  padding-bottom: 200px;
-  /* height: 600px; */
+  padding-bottom: 200px; 
 }
 .hero {    
   text-align: center; 
   background-color: var(--primary-bg-color);
 }
-.overlay {
-  max-width: 1600px;
-  height: 600px;
+.overlay {  
   margin-left: auto;
   margin-right: auto;
   background-image: url("../img/hero-img.jpg");
@@ -190,33 +187,19 @@ body {
   list-style: none;
 }
 
-.list-description {    
-  width: 270px;  
+.list-description {     
+  width: 270px;
+  
 }
-.list-description::before {
-  content: "" ;
-  display: block;
-  height: 120px;
+.icon {
+  width: 270px;
+  height: 120px; 
   margin-bottom: 30px;
-  border-radius: 4px;
-  background-position: center;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
   padding: 25px 100px;
-  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color); 
 }
-.icon-antenna::before { 
-  background-image: url("../img/antenna\ 1.svg");
-}
-.icon-clock::before {  
-  background-image: url("../img/clock\ 1.svg");
-}
-.icon-diagram::before {  
-  background-image: url("../img/diagram\ 1.svg");
-}
-.icon-astronaut::before {  
-  background-image: url("../img/astronaut\ 1.svg");
-}
+
 .subtitle {
   margin: 0px;
   margin-bottom: 10px;
@@ -347,18 +330,26 @@ body {
   margin-bottom: 20px;
 }
 
-.padding-contacts {  
+.padding-contacts {   
   padding-top: 60px;
-  padding-bottom: 60px; 
+  padding-bottom: 60px;  
 }
- .icons {
+.contacts-container {
   display: flex;
   align-items: center;
-  margin: 0px;
-  /* margin-left: 156px; */
+}
+.logo {
+  display: flex;
+  margin-right: 156px;
+}
+
+ .icons {
+  display: flex;
+  align-items:flex-end ;
+  margin: 0px;   
 } 
-.social-icons {
-  display: inline-block;
+
+.subtitle-text {
   margin-bottom: 20px;
 
   font-weight: bold;
@@ -368,7 +359,15 @@ body {
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
-
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-size {
+  width: 44px;
+  height: 44px;
+  list-style: none;
+}
 /* /Контакты */
 
 /*Portfolio*/
