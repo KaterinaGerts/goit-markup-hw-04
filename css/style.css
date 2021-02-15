@@ -10,6 +10,7 @@
   --border-color: #EEEEEE;
   --border-line-color: #ECECEC;
   --gradient: rgba(47, 48, 58, 0.4);
+  --social-links-color: #AFB1B8;
 }
  
 body {
@@ -206,7 +207,7 @@ body {
 }
 .icon {
   width: 270px;
-  height: 120px; 
+  height: 120px;  
   margin-bottom: 30px;
   padding: 25px 100px;
   border-radius: 4px;
@@ -293,17 +294,51 @@ body {
 
 .description {
   margin: 0px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
 }
 
-.team-profile {
+.team-profile {  
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--secondary-text-color);
 }
+.team-links { 
+  width: 270px;
+  display: flex;
+  justify-content: space-around; 
+  padding: 0px 30px; 
+}
 
+.icons-bar {
+  display: inline-flex;
+  list-style: none;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  padding: 12px; 
+  border-radius: 50%;
+}
+.icons-bar:last-child {
+  margin-right: 0px;
+}
+
+.icons-bar:hover,
+.icons-bar:focus {
+  background-color: var(--accent-color);
+}  
+
+.social-icons {
+  display: inline-flex; 
+  align-items: center;   
+  fill: var(--social-links-color);
+}
+.social-icons:hover,
+.social-icons:focus {
+  fill: var(--secondary-text-color);
+}
 /* /Наша команда */
 
 /* Контакты */
