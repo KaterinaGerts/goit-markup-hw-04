@@ -311,17 +311,22 @@ body {
 .icons-bar {
   display: inline-flex;
   list-style: none;
-  width: 44px;
+  /* width: 44px;
   height: 44px;
   margin-right: 10px;
   padding: 12px; 
-  border-radius: 50%;
+  border-radius: 50%; */
 }
 .icons-bar:last-child {
   margin-right: 0px;
 }
 
 .icon-links {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  padding: 12px; 
+  border-radius: 50%;
   color: var(--social-links-color);
 }
 .social-icons {
@@ -329,20 +334,12 @@ body {
   align-items: center;   
   fill: currentColor;
 }
-.icons-bar:hover,
-.icons-bar:focus {
-  background-color: var(--accent-color);
-  } 
 
 .icon-links:hover,
 .icon-links:focus {  
-  color: var(--secondary-text-color);
-  /* fill:var(--secondary-text-color) ; */
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color); 
 }  
-/* .social-icons:hover,
-.social-icons:focus {
-  fill: var(--secondary-text-color);
-}   */
   
 /* /Наша команда */
 
